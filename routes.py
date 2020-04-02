@@ -1,5 +1,5 @@
 from flask import render_template,flash, redirect,url_for,render_template_string,send_from_directory
-from app import app,db
+from app import app,db,basedir
 from forms import LoginForm
 from flask_login import current_user, login_user
 from models import User
@@ -14,6 +14,11 @@ from flask import g
 import ntpath
 from pathlib import Path
 import base64
+from flask import send_from_directory
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(basedir, 'static'), 'favicon.png')#, mimetype='image/vnd.microsoft.icon')
 
 @app.errorhandler(404)
 def page_not_found(error):
