@@ -3,7 +3,6 @@ flask
 flask_socketio
 flask_sqlalchemy
 sqlalchemy
-glob
 werkzeug
 flask_migrate
 flask_bootstrap
@@ -12,8 +11,4 @@ flask_session
 flask_wtf
 wtforms
 datetime
-re
-json
-os
-time
 numpy
