@@ -1,9 +1,11 @@
+Python 3.6.9
 flask_table
 flask
 flask_socketio
 flask_sqlalchemy
 sqlalchemy
 werkzeug
+eventlet
 flask_migrate
 flask_bootstrap
 flask_login
