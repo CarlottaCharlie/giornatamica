@@ -1,3 +1,4 @@
+gunicorn
 flask_table
 flask
 flask_socketio
